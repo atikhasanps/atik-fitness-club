@@ -39,7 +39,10 @@ const Fitness = () => {
             <div className="workout-calculation">
                  
         
-                 <ExerciseDetails exerciseTime={exerciseTime}></ExerciseDetails>
+                 <ExerciseDetails exerciseTime={exerciseTime}>
+
+                     
+                 </ExerciseDetails>
                 <Addbreak></Addbreak>
         
             </div>

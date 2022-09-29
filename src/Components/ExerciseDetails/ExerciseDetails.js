@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './ExerciseDetails.css'
 
 const ExerciseDetails = ({exerciseTime}) => {
@@ -8,10 +8,17 @@ const ExerciseDetails = ({exerciseTime}) => {
             Time = Time + workout.time;
         }
 
+
+    const [breaktime, setBreaktime] =useState([]);
+    const handleAddABreak =(event)=>{
+        const value =event.target.innerText;
+        setBreaktime(value);
+    }
+        
     return (
         <div className='exerciseDetails'>
 
-<div className="address">
+            <div className="address">
                 <div className='image'><img className='address-img' src='https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=600' alt=''/></div>
                 <div className='info'>
                     <h2>Ashraf Atik</h2>
@@ -33,10 +40,23 @@ const ExerciseDetails = ({exerciseTime}) => {
                 </div>
             </div>
 
+            
+            <h2>Add A Break</h2>
+            <div className='breaktime'>
+                <div><button onClick={handleAddABreak} className='time'>10s</button></div>
+                <div><button onClick={handleAddABreak} className='time'>20s</button></div>
+                <div><button onClick={handleAddABreak} className='time'>30s</button></div>
+                <div><button onClick={handleAddABreak} className='time'>40s</button></div>
+                <div><button onClick={handleAddABreak} className='time'>50s</button></div>
+                
+            </div>
+
+
 
 
             <h2>Exercise Details</h2>
             <h3>Exercise time:{Time}</h3>
+            <h3>Break time:{breaktime}</h3>
         </div>
     );
 };

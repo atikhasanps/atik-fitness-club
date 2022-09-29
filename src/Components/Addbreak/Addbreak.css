@@ -1,1 +1,11 @@
-
+.breaktime{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: gray;
+}
+.time{
+    border-radius: 50%;
+    background-color: white;
+    padding: 5px;
+}

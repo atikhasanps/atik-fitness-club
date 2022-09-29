@@ -12,7 +12,12 @@ const Fitness = () => {
         fetch('workouts.json')
         .then(res=>res.json())
         .then(data=> setWorkouts(data))
-    },[])
+    },[]);
+
+    const handleAddToList =()=>{
+        console.log('click');
+    }
+
     return (
         <div className='fitnesses'>
             <div className="workout">
@@ -22,6 +27,7 @@ const Fitness = () => {
                 {
                     workouts.map(workout=><Workout
                     workout={workout}
+                    handleAddToList ={handleAddToList}
                     ></Workout>)
                 }
                 </div>

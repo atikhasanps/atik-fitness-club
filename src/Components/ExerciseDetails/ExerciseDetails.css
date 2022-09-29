@@ -28,7 +28,10 @@
     position:sticky;
     top:0;
 }
-
+.btn-toast{
+    font-size: 15px;
+    padding: 10px 30px;
+}
 
 
 .breaktime{

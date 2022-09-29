@@ -69,7 +69,7 @@ const ExerciseDetails = ({exerciseTime}) => {
             <h3>Exercise time: {Time}minutes</h3>
             <h3>Break time: {breaktime}</h3>
 
-            <button onClick={notify} >Activity Completed</button>
+            <button onClick={notify} className="btn-toast">Activity Completed</button>
             <ToastContainer />
             
         </div>

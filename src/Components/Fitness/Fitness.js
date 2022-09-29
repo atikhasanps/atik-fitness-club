@@ -44,7 +44,7 @@ const Fitness = () => {
 
                      
                  </ExerciseDetails>
-                {/* <Addbreak></Addbreak> */}
+             
         
             </div>
         </div>

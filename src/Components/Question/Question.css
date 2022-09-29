@@ -3,3 +3,14 @@
    padding-left: 300px;
    padding-top: 100px;
 }
+
+@media screen and (max-device-width: 480px)
+{
+
+.question{
+
+    width: 100%;
+    padding-left: 0;
+}
+
+}

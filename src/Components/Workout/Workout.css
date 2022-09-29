@@ -1,0 +1,17 @@
+.workouts{
+    border: 1px solid gray;
+}
+.workout-img{
+    width: 300px;
+    height: 300px;
+}
+
+.btn-workout{
+width: 300px;
+background: black;
+color: white;
+border: none;
+border-radius: 5px;
+padding: 10px 0;
+font-size: 20px;
+}

@@ -1,0 +1,19 @@
+.fitnesses{
+    display:grid;
+    grid-template-columns: 3fr 1fr;
+
+}
+.fitness{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+   grid-gap: 10px;
+}
+.workout{
+    width: 80%;
+    
+    padding-left: 100px;
+}
+
+.workout-calculation{
+    background-color: gray;
+}

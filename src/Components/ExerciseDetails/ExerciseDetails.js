@@ -55,8 +55,8 @@ const ExerciseDetails = ({exerciseTime}) => {
 
 
             <h2>Exercise Details</h2>
-            <h3>Exercise time:{Time}</h3>
-            <h3>Break time:{breaktime}</h3>
+            <h3>Exercise time: {Time}minutes</h3>
+            <h3>Break time: {breaktime}</h3>
         </div>
     );
 };

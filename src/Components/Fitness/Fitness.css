@@ -19,3 +19,25 @@
     position: sticky;
     top: 0;
 }
+
+
+@media screen and (max-device-width: 480px)
+{
+
+    .workout{
+        width: 100%;
+        padding-left: 0;
+    }
+
+    .fitnesses{
+        display:grid;
+        grid-template-columns: 1fr;
+        position: relative;
+    }
+
+    .fitness{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 10px;
+    }
+}

@@ -1,5 +1,9 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
+import { addToDb, getBreakTime } from '../Fakedb/fakedb';
 import './ExerciseDetails.css'
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 
 const ExerciseDetails = ({exerciseTime}) => {
 
@@ -13,8 +17,17 @@ const ExerciseDetails = ({exerciseTime}) => {
     const handleAddABreak =(event)=>{
         const value =event.target.innerText;
         setBreaktime(value);
+       addToDb(value)
     }
-        
+    
+    useEffect(()=>{
+        const breakTime = getBreakTime();
+        console.log(breakTime)
+    },[]);
+
+    const notify = () => toast("Wow Activity Completed!");
+
+
     return (
         <div className='exerciseDetails'>
 
@@ -52,11 +65,13 @@ const ExerciseDetails = ({exerciseTime}) => {
             </div>
 
 
-
-
             <h2>Exercise Details</h2>
             <h3>Exercise time: {Time}minutes</h3>
             <h3>Break time: {breaktime}</h3>
+
+            <button onClick={notify} >Activity Completed</button>
+            <ToastContainer />
+            
         </div>
     );
 };

@@ -1,7 +1,7 @@
 .fitnesses{
     display:grid;
     grid-template-columns: 3fr 1fr;
-
+    position: relative;
 }
 .fitness{
     display: grid;
@@ -15,5 +15,7 @@
 }
 
 .workout-calculation{
-    background-color: gray;
+    background-color: rgb(86, 83, 83);
+    position: sticky;
+    top: 0;
 }

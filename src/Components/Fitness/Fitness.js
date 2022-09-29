@@ -38,8 +38,8 @@ const Fitness = () => {
             <div className="workout-calculation">
         
         <Myself></Myself>
-        <ExerciseDetails></ExerciseDetails>
-        <p>select:{exerciseTime.length}</p>
+        <ExerciseDetails exerciseTime={exerciseTime}></ExerciseDetails>
+        
             </div>
         </div>
     );

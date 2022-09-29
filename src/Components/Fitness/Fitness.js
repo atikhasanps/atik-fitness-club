@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react';
+import Addbreak from '../Addbreak/Addbreak';
 import ExerciseDetails from '../ExerciseDetails/ExerciseDetails';
 import Header from '../Header/Header';
-import Myself from '../Myself/Myself';
+
 import Workout from '../Workout/Workout';
 
 import './Fitness.css';
@@ -16,7 +17,7 @@ const Fitness = () => {
     },[]);
 
     const handleAddToList =(workout)=>{
-        console.log(workout);
+        
         const newExerciseTime =[...exerciseTime, workout]
         setExerciseTime(newExerciseTime);
     }
@@ -36,9 +37,10 @@ const Fitness = () => {
                 </div>
             </div>
             <div className="workout-calculation">
+                 
         
-        <Myself></Myself>
-        <ExerciseDetails exerciseTime={exerciseTime}></ExerciseDetails>
+                 <ExerciseDetails exerciseTime={exerciseTime}></ExerciseDetails>
+                <Addbreak></Addbreak>
         
             </div>
         </div>

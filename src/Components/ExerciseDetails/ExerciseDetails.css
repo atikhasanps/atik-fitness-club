@@ -1,0 +1,33 @@
+
+.address{
+    display:flex;
+    align-items: center;
+    
+    
+}
+.address-img{
+    width: 20%;
+    border-radius: 30%;
+}
+.image{
+    text-align: left;
+}
+.info{
+    text-align: left;
+    
+}
+.body{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+}
+
+
+
+
+
+
+.exerciseDetails{
+    position:sticky;
+    top:0;
+}

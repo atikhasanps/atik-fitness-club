@@ -10,7 +10,7 @@ const Workout = (props) => {
             <img className='workout-img' src={img} alt=''/>
             <h2>{name}</h2>
             <p>Time required: {time}min</p>
-            <button onClick={props.handleAddToList} className='btn-workout'>Add to list</button>
+            <button onClick={()=> props.handleAddToList(props.workout)} className='btn-workout'>Add to list</button>
         </div>
     );
 };

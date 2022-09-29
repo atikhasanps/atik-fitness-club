@@ -7,6 +7,7 @@ import Workout from '../Workout/Workout';
 import './Fitness.css';
 const Fitness = () => {
     const[workouts, setWorkouts] = useState([]);
+    const[exerciseTime, setExerciseTime] =useState([]);
 
     useEffect(()=>{
         fetch('workouts.json')
@@ -14,8 +15,10 @@ const Fitness = () => {
         .then(data=> setWorkouts(data))
     },[]);
 
-    const handleAddToList =()=>{
-        console.log('click');
+    const handleAddToList =(workout)=>{
+        console.log(workout);
+        const newExerciseTime =[...exerciseTime, workout]
+        setExerciseTime(newExerciseTime);
     }
 
     return (
@@ -36,6 +39,7 @@ const Fitness = () => {
         
         <Myself></Myself>
         <ExerciseDetails></ExerciseDetails>
+        <p>select:{exerciseTime.length}</p>
             </div>
         </div>
     );

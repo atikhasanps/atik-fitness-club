@@ -5,11 +5,13 @@
     width: 300px;
     height: 300px;
 }
-
+.workout-name{
+    font-size:25px;
+}
 .btn-workout{
 width: 300px;
-background: black;
 color: white;
+background-color:rgb(187, 9, 175);
 border: none;
 border-radius: 5px;
 padding: 10px 0;

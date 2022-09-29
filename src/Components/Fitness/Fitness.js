@@ -26,7 +26,7 @@ const Fitness = () => {
         <div className='fitnesses'>
             <div className="workout">
                 <Header></Header>
-                <h2>Select today’s exercise</h2>
+                <h2 className='select-title'>Select today’s exercise</h2>
                 <div className='fitness'>
                 {
                     workouts.map(workout=><Workout

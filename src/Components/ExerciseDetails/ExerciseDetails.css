@@ -1,8 +1,8 @@
 
 .address{
     display:flex;
-    align-items: center;
-    
+    padding-top: 30px;
+    padding-bottom: 30px;
     
 }
 .address-img{
@@ -14,23 +14,55 @@
 }
 .info{
     text-align: left;
-    
+    ;
+}
+.info-name{
+    font-size: 24px
 }
 .body{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    background-color: lightblue;
+    background-color: rgb(212, 209, 209);
     border-radius: 10px;
+    margin-bottom: 30px;
+
 }
 
+.body-info{
+    font-size: 24px;
+}
+
+.weight{
+    font-size: 18px;
+}
+
+.break-title{
+    font-size:24px;
+    text-align: left;
+    padding-bottom: 20px;
+    padding-left: 10px;
+}
 
 .exerciseDetails{
     position:sticky;
     top:0;
 }
+.details{
+    font-size: 20px;
+}
+.details-input{
+    border-radius: 7px;
+    font-size: 20px;
+    background-color: rgb(212, 209, 209);
+    padding: 20px 0;
+}
 .btn-toast{
-    font-size: 15px;
+    font-size: 20px;
     padding: 10px 30px;
+    color:white;
+    background-color: rgb(187, 9, 175);
+    border-radius: 7px;
+    border:none;
 }
 
 
@@ -38,10 +70,11 @@
     display: flex;
     justify-content: space-between;
     padding: 20px;
-    background-color: gray;
+   
 }
 .time{
     border-radius: 50%;
-    background-color: white;
+    background-color: rgb(187, 9, 175);
+    color:white;
     padding: 5px;
 }

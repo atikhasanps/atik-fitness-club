@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import Addbreak from '../Addbreak/Addbreak';
+
 import ExerciseDetails from '../ExerciseDetails/ExerciseDetails';
 import Header from '../Header/Header';
 
@@ -43,7 +43,7 @@ const Fitness = () => {
 
                      
                  </ExerciseDetails>
-                <Addbreak></Addbreak>
+                {/* <Addbreak></Addbreak> */}
         
             </div>
         </div>

@@ -30,6 +30,7 @@ const Fitness = () => {
                 <div className='fitness'>
                 {
                     workouts.map(workout=><Workout
+                    key={workout.id}
                     workout={workout}
                     handleAddToList ={handleAddToList}
                     ></Workout>)
